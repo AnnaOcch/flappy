@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Bob's Flappy Bird</title>
+<link rel="stylesheet" href="../assets/style.css"/>
+<link rel="stylesheet" href="../lib/bootstrap.css"/>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="jumbotron">
+
+<h1>Bob's Flappy Bird.</h1>
+
+<p>Welcome to the best flappy bird game there is!</p>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<p id="gameLink">
+
+<a href="example.html"><img src="../assets/screenshot.png" class="img-responsive" /></a>
+
+</p>
+
+</div>
+
+<div class="col-md-5">
+
+
+
+<p>The highest scorers are:</p>
+
+<ul id="scoreBoard">
+
+</ul>
+
+</div>
+
+</div>
+ <div id="game"> </div>
+<div class="row">
+
+<div class="col-md-4">
+
+<img src="../assets/screenshotStart.png" class="img-circle img-responsive" />
+
+</div>
+
+<div class="col-md-4">
+
+<img src="../assets/screenshot.png" class="img-rounded img-responsive" />
+
+</div>
+
+<div class="col-md-4">
+
+<img src="../assets/screenshotOver.png" class="img-thumbnail img-responsive" />
+
+</div>
+
+</div>
+</div>
+<div id="greeting">
+<h3>Save your score</h3>
+<form id="greeting-form" method="post" action="/score">
+<div class="form-group">
+
+<label for="fullName">What's your name?</label>
+
+<input type="text" id="fullName" name="fullName"
+
+class="form-control" placeholder="Bob" required>
+
+<label for="email">What's your email?</label>
+
+<input type="email" id="email" class="form-control"
+
+name="email" placeholder="bob@email.com">
+
+<input type="hidden" id="score" name="score" value="0">
+
+</div>
+
+<button class="btn btn-default" type="submit">OK</button>
+
+</form>
+
+</div>
+<script src="../lib/jquery.js"></script>
+ <script type="text/javascript" src="../lib/phaser.min.js"></script>
+    <script type="text/javascript" src="../js/flappy.js"></script>
+     <script type="text/javascript" src="../app.js"></script>
+</body>
+
+</html>
